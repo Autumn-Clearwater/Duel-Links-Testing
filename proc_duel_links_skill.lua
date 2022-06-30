@@ -1,7 +1,7 @@
 DUEL_LINKS_SKILL_COVER =   300000002
 
 function Auxiliary.GetCharacter(c,coverNum)
-    return DUEL_LINKS_SKILL_COVER+(c:GetOriginalAttribute)+(c:GetOriginalRace())
+    return DUEL_LINKS_SKILL_COVER+(c:GetOriginalAttribute)+(c:GetOriginalLevel())+(c:GetOriginalRace())
 end
 
 function Auxiliary.AddDuelLinksSkillProcedure(c,coverNum,drawless,skillcon,skillop,countlimit)
